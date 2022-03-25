@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+    Используя только ConstrainLayout, выполните верстку элемента.
+    Иконка располагается слева, справа от неё текст с названием и
+    описанием товара. Использовать можно только ConstraintLayout.
+-->
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/main_constraint_cont"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/icon_cont"
+        android:layout_width="85dp"
+        android:layout_height="85dp"
+        app:layout_constraintTop_toTopOf="@id/main_constraint_cont"
+        app:layout_constraintBottom_toBottomOf="@id/main_constraint_cont"
+        app:layout_constraintStart_toStartOf="@id/main_constraint_cont"
+        android:layout_marginStart="10dp"
+        android:background="@color/purple_700"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/name_cont"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            app:layout_constraintTop_toTopOf="@id/main_constraint_cont"
+            app:layout_constraintStart_toEndOf="@id/icon_cont"
+            android:layout_marginStart="105dp"
+            android:background="@color/purple_500"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            app:layout_constraintTop_toBottomOf="@id/name_cont"
+            app:layout_constraintStart_toEndOf="@id/icon_cont"
+            android:layout_marginStart="105dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/purple_200"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

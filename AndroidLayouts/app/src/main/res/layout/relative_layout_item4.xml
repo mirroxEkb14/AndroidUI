@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+    Необходимо сверстать элемент списка с иконкой, наименованием и описанием.
+    Использовать можно только RelativeLayout.
+-->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/main_cont"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+        
+        <RelativeLayout
+            android:id="@+id/product_icon"
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:background="@color/purple_700"/>
+
+        <RelativeLayout
+            android:id="@+id/name_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/product_icon"
+            android:layout_marginStart="15dp">
+
+            <RelativeLayout
+                android:id="@+id/product_name"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="5dp"
+                android:background="@color/purple_200"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/product_name"
+                android:background="@color/purple_500"/>
+
+        </RelativeLayout>
+        
+    </RelativeLayout>
+
+</RelativeLayout>

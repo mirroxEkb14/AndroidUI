@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+    Представьте, что вы верстаете приложение с нижним меню навигации и верхней
+    строкой состояния. Использовать можно только RelativeLayout.
+
+    В верхней части экрана можно расположить очки пользователя или просто
+    название приложения. В нижней части можно поставить несколько иконок,
+    которые будут отвечать за навигацию.
+-->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/top_menu"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:background="#7C4DFF"/>
+
+    <RelativeLayout
+        android:id="@+id/bottom_menu"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="#69F0AE"/>
+
+    <RelativeLayout
+        android:id="@+id/main_screen"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/top_menu"
+        android:layout_above="@+id/bottom_menu"
+        android:background="#C8C8C8"/>
+
+</RelativeLayout>

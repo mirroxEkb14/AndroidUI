@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+    Необходимо расположить контейнеры RelativeLayout по диагонали с верхнего
+    левого угла экрана до правого нижнего. Использовать можно только RelativeLayout.
+-->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rel1"
+        android:layout_width="105dp"
+        android:layout_height="185dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:background="@color/design_default_color_primary"/>
+
+    <RelativeLayout
+        android:id="@+id/rel2"
+        android:layout_width="105dp"
+        android:layout_height="185dp"
+        android:layout_toEndOf="@+id/rel1"
+        android:layout_below="@+id/rel1"
+        android:background="@color/design_default_color_primary"/>
+
+    <RelativeLayout
+        android:id="@+id/rel3"
+        android:layout_width="105dp"
+        android:layout_height="185dp"
+        android:layout_toEndOf="@+id/rel2"
+        android:layout_below="@+id/rel2"
+        android:background="@color/design_default_color_primary"/>
+
+    <RelativeLayout
+        android:id="@+id/rel4"
+        android:layout_width="105dp"
+        android:layout_height="185dp"
+        android:layout_toEndOf="@+id/rel3"
+        android:layout_below="@+id/rel3"
+        android:background="@color/design_default_color_primary"/>
+
+</RelativeLayout>
