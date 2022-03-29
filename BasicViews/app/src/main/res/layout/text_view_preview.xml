@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!--
+        dp - an independent from display density pixel, what
+        means that the content is displayed same way on different
+        devices, while sp is a pixel that is independent from
+        the scale. It is so because there is a function of
+        increasing the text separately from another content
+        on Android
+
+        android:ellipsize="end" -> adds ... it the end if the
+        string is too large and some text cant be displayed
+        in 3 lines(maxLines)
+
+        android:autoLink="" -> web, email, map, phone,
+        none, all
+
+        android:linksClickable="true" -> when you click on the
+        link, it will open in the browser
+
+        create a shadow ->
+        android:shadowColor
+        android:shadowDx
+        android:shadowDy
+        android:shadowRadius
+
+        translucency(полупрозрачноть) ->
+        android:alpha="0.5" OR
+        android:textColor="#50000000" 50 before the color
+    -->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="random text for demonstration skillfactory.ru, adm02.kz@mail.ru"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textColor="#ff5555"
+        android:maxLines="3"
+        android:ellipsize="end"
+        android:autoLink="all"
+        android:linksClickable="true"
+        android:shadowColor="@color/black"
+        android:shadowDx="5"
+        android:shadowDy="5"
+        android:shadowRadius="4"
+        android:alpha="0.5"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

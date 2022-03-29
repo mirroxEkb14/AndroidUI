@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">BasicViews</string>
+    <string name="res_text">Строка из ресурсов</string>
+</resources>
