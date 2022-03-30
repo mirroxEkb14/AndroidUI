@@ -3,12 +3,6 @@
 <!--
     To change the orientation, select 'Orientation for Preview'
     in 'Split' or 'Design' mode, select 'create Landscape Variation'
-
-    to set a certain state for a certain OS version, we need to add
-    a 'Version' qualifier: create an analog of 'drawable' folder:
-    right click on resource folder(res) -> Android Resource Directory
-    -> Resource type: drawable -> Available qualifiers: Version ->
-    Platform API level: 16 -> 'drawable-v16' folder is created
 -->
 
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"

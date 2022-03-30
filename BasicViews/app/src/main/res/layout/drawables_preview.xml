@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--
+    android:background="@drawable/rectangle" -> does not work because
+    the 'Theme.MaterialComponents.DayNight.DarkActionBar' theme is used
+    by default what means that 'Button' get turned into 'MaterialButton'
+    that ignores 'android:background=""', so we need to use
+    'android.widget.Button' instead
+     -->
+
+    <android.widget.Button
+        android:id="@+id/btn_rectangle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button"
+        android:background="@drawable/shape_rectangle"/>
+
+    <android.widget.Button
+        android:id="@+id/btn_layerlist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_rectangle"
+        android:text="Button"
+        android:background="@drawable/layer_list"/>
+
+    <android.widget.Button
+        android:id="@+id/btn_selector"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_layerlist"
+        android:text="Button"
+        android:background="@drawable/selector"/>
+
+    <!--
+    android:background="?android:attr/selectableItemBackground"
+    -> waves inside the container
+    android:background="?android:attr/selectableItemBackgroundBordless"
+    -> waves come out of the container
+    -->
+    <android.widget.Button
+        android:id="@+id/btn_withbackground"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_selector"
+        android:text="Button"
+        android:background="?android:attr/selectableItemBackground"/>
+
+    <!-- we can create out own 'ripple' in xml drawables -->
+    <android.widget.Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_withbackground"
+        android:text="Button"
+        android:background="@drawable/ripple"/>
+
+</RelativeLayout>

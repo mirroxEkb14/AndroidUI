@@ -3,8 +3,17 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/user/AndroidStudioProjects/BasicViews/app/src/main/res/drawable/ic_baseline_back_hand_24.xml" value="0.2475" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/BasicViews/app/src/main/res/drawable/layer_list.xml" value="0.238" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/BasicViews/app/src/main/res/drawable/rectangle.xml" value="0.2475" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/BasicViews/app/src/main/res/drawable/ripple.xml" value="0.238" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/BasicViews/app/src/main/res/drawable/selector.xml" value="0.238" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/BasicViews/app/src/main/res/drawable/shape_rectangle.xml" value="0.238" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/BasicViews/app/src/main/res/layout-land/activity_main.xml" value="0.21516754850088182" />
         <entry key="..\:/Users/user/AndroidStudioProjects/BasicViews/app/src/main/res/layout/activity_main.xml" value="0.24010416666666667" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/BasicViews/app/src/main/res/layout/button_preview.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/user/AndroidStudioProjects/BasicViews/app/src/main/res/layout/change_view_state_from_code.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/BasicViews/app/src/main/res/layout/drawables_preview.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/user/AndroidStudioProjects/BasicViews/app/src/main/res/layout/image_view_preview.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/user/AndroidStudioProjects/BasicViews/app/src/main/res/layout/strings_and_localization.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/user/AndroidStudioProjects/BasicViews/app/src/main/res/layout/strings_colors_and_localization.xml" value="0.25416666666666665" />

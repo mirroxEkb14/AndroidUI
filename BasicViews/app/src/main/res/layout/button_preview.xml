@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--
+        android:enabled="false" -> unavailable to click
+
+        android:onClick="onClickToast" -> better through 'setOnClickListener'
+
+        android:layout_marginTop="@dimen/my_margin" -> we can create
+        own sizes: values -> New -> Values Resource File
+
+        android:backgroundTint="white" -> to change background color
+    -->
+
+    <Button
+        android:id="@+id/toast_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button"
+        android:enabled="false"
+        android:onClick="onClickToast"/>
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Radio Button"
+        android:checked="true"/>
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Check box"
+        android:checked="true"/>
+
+    <ToggleButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Toggle button"
+        android:checked="true"/>
+
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Switch button"
+        android:checked="true"
+        android:layout_marginTop="@dimen/my_margin"/>
+
+</LinearLayout>

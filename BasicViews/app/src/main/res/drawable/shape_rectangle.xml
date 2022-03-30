@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- select a shape: rectangle, oval, ring, line -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <!-- circuit -->
+    <stroke android:color="@color/colorPrimary" android:width="1dp"/>
+    <!-- fill -->
+    <solid android:color="@android:color/white"/>
+    <!-- round corners -->
+    <corners android:radius="10dp"/>
+</shape>
+
+<!-- *see drawables_preview.xml -->
