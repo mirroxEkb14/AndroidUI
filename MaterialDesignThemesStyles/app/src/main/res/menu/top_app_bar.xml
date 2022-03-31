@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!--
+        android:title="" -> if there is no image, the text is
+        displayed; with a long click on the icon, the title will
+        appear; needs for attribute ' app:showAsAction="" '
+
+        app:showAsAction="" -> how the icons will behave,
+        app:showAsAction="withText" in the last item means that
+        it is not an icon but just a drop-down list with text
+
+        app:showAsAction="collapseActionView" ->
+        Is a combination of "ifRoom|withText"
+
+        app:showAsAction="ifRoom" -> on the toolbar, when
+        overflowing, they will be moved to the drop-down menu
+
+        app:showAsAction="always" -> always on toolbar
+
+        app:showAsAction="never" -> not shown
+    -->
+
+    <item
+        android:id="@+id/favorite"
+        android:icon="@drawable/ic_baseline_favorite_border_24"
+        android:title="Favorite"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/search"
+        android:icon="@drawable/ic_baseline_search_24"
+        android:title="Search"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/more"
+        android:icon="@drawable/ic_baseline_more_vert_24"
+        android:title="More"
+        app:showAsAction="withText"/>
+</menu>
