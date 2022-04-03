@@ -3,9 +3,14 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/user/AndroidStudioProjects/MaterialDesignThemesStyles/MaterialToolbar/app/src/main/res/layout/activity_main.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/MaterialDesignThemesStyles/MaterialToolbar/app/src/main/res/layout/contextual_action_bar_preview.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/MaterialDesignThemesStyles/app/src/main/res/drawable/ic_baseline_add_a_photo_24.xml" value="0.2235" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/MaterialDesignThemesStyles/app/src/main/res/drawable/ic_baseline_favorite_border_24.xml" value="0.2235" />
         <entry key="..\:/Users/user/AndroidStudioProjects/MaterialDesignThemesStyles/app/src/main/res/layout/activity_main.xml" value="0.24010416666666667" />
         <entry key="..\:/Users/user/AndroidStudioProjects/MaterialDesignThemesStyles/app/src/main/res/layout/contextual_action_bar_preview.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/user/AndroidStudioProjects/MaterialDesignThemesStyles/app/src/main/res/layout/regular_top_app_bar.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/MaterialDesignThemesStyles/app/src/main/res/layout/regular_top_app_bar_preview.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/user/AndroidStudioProjects/MaterialDesignThemesStyles/app/src/main/res/menu/contextual_actionbar.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/user/AndroidStudioProjects/MaterialDesignThemesStyles/app/src/main/res/menu/top_app_bar.xml" value="0.25416666666666665" />
       </map>
