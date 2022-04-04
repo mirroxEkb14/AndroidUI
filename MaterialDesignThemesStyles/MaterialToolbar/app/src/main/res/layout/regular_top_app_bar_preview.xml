@@ -12,20 +12,20 @@
         Next: drawable -> New -> Vector Image -> add menu icons
     -->
 
-        <com.google.android.material.appbar.AppBarLayout
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/topAppBar"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:layout_constraintTop_toTopOf="parent">
+            android:layout_height="?attr/actionBarSize"
+            app:title="SkillFactory"
+            app:titleTextColor="@color/white"
+            app:menu="@menu/top_app_bar"
+            app:navigationIcon="@drawable/ic_baseline_menu_24"/>
 
-            <com.google.android.material.appbar.MaterialToolbar
-                android:id="@+id/topAppBar"
-                android:layout_width="match_parent"
-                android:layout_height="?attr/actionBarSize"
-                app:title="SkillFactory"
-                app:titleTextColor="@color/white"
-                app:menu="@menu/top_app_bar"
-                app:navigationIcon="@drawable/ic_baseline_menu_24"/>
-
-        </com.google.android.material.appbar.AppBarLayout>
+    </com.google.android.material.appbar.AppBarLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
