@@ -31,9 +31,11 @@ android {
     }
 }
 
+// select the version as a separate variable and then change it only in one place
+// quote must be double -> ""
 dependencies {
-
-    implementation "androidx.viewpager2:viewpager2:1.1.0-beta01"
+    def viewpager_version = "1.1.0-beta01"
+    implementation "androidx.viewpager2:viewpager2:$viewpager_version"
 
     implementation 'androidx.core:core-ktx:1.7.0'
     implementation 'androidx.appcompat:appcompat:1.4.1'
