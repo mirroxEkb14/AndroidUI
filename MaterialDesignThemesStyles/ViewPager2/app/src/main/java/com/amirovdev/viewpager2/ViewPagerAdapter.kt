@@ -4,6 +4,10 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 
+/**
+ * Class for management and connection of all items
+ */
+
 class ViewPagerAdapter : RecyclerView.Adapter<PagerViewHolder>() {
     //Здесь хранится список наших объектов с цветом и текстом
     private val items = mutableListOf<PagerItem>()

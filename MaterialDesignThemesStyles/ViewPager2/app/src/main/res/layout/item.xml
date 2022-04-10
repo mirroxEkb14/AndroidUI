@@ -12,12 +12,12 @@
 
     <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/textView"
-        android:textColor="@android:color/white"
         android:layout_width="wrap_content"
-        android:layout_centerInParent="true"
+        android:layout_height="wrap_content"
         android:text="item"
         android:textSize="32sp"
-        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:layout_centerInParent="true"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"

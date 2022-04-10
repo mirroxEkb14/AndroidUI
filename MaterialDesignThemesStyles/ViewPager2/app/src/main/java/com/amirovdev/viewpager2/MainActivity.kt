@@ -31,7 +31,7 @@ class MainActivity : AppCompatActivity() {
         // to scroll vertically
 //        findViewById<ViewPager2>(R.id.viewPager2).orientation = ViewPager2.ORIENTATION_VERTICAL
 
-        // animating transitions between screens
+        // animating transitions between screens (parallax effect)
         // page -> the current viewPage,
         // position -> we have three images, if we are on the second one, the first has -1, the second - 0, the third - 1
         viewPager2.setPageTransformer { page, position ->
