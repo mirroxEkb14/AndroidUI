@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+    values -> New -> Values Resource File ->
+    File name: colors, Available qualifiers: Night Mode,
+    right arrow -> Night mode: Night -> OK
+-->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/main_background">
+
+    <TextView
+        android:id="@+id/top_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/switcher"
+        android:text="Dark Mode Switching Top"
+        android:textAlignment="center"
+        android:layout_marginBottom="20dp"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:textColor="@color/text_color" />
+
+    <Switch
+        android:id="@+id/switcher"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Change Theme"
+        android:layout_centerInParent="true"
+        android:textColor="@color/black"
+        android:thumbTint="@color/switch_color"
+        tools:ignore="UseSwitchCompatOrMaterialXml"/>
+
+    <TextView
+        android:id="@+id/bottom_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/switcher"
+        android:text="Dark Mode Switching Bottom"
+        android:textAlignment="center"
+        android:layout_marginTop="20dp"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:textColor="@color/text_color_2" />
+
+</RelativeLayout>
