@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_background"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/translate_square"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/purple_square"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"/>
+
+    <ImageView
+        android:id="@+id/alpha_square"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/purple_square"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/translate_square"
+        android:layout_marginTop="20dp"/>
+
+    <ImageView
+        android:id="@+id/scale_square"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/purple_square"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/alpha_square"
+        android:layout_marginTop="20dp"/>
+
+    <ImageView
+        android:id="@+id/rotate_square"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/purple_square"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/scale_square"
+        android:layout_marginTop="20dp"/>
+
+    <ImageView
+        android:id="@+id/pusheen_cat"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/pusheen_cat"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/rotate_square"
+        android:layout_marginTop="20dp"/>
+
+    <ImageView
+        android:id="@+id/rocket"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/rocket"
+        android:layout_centerHorizontal="true"
+        android:layout_toStartOf="@id/pusheen_cat"
+        android:layout_below="@id/rotate_square"
+        android:layout_marginTop="20dp"/>
+
+</RelativeLayout>
