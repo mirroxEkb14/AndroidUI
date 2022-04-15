@@ -30,6 +30,7 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
+    // one of the variants how to do the same
     private fun oldMethod() {
         // create an instance of the AndroidDrawable class
         val ad = getResources().getDrawable(R.drawable.frame_animation) as AnimationDrawable
