@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- the button is pressed -->
+    <item android:state_pressed="true">
+        <set>
+            <!-- elevation effect -->
+            <objectAnimator
+                android:duration="200"
+                android:propertyName="translationZ"
+                android:valueTo="10dp"
+                android:valueType="floatType"/>
+
+            <!-- increasing size effect -->
+            <objectAnimator
+                android:duration="200"
+                android:propertyName="scaleX"
+                android:valueTo="1.1"
+                android:valueType="floatType" />
+            <objectAnimator
+                android:duration="200"
+                android:propertyName="scaleY"
+                android:valueTo="1.1"
+                android:valueType="floatType" />
+        </set>
+    </item>
+
+    <!-- the button if freed -->
+    <item>
+        <set>
+            <!-- elevation effect -->
+            <objectAnimator
+                android:duration="200"
+                android:propertyName="translationZ"
+                android:valueTo="0dp"
+                android:valueType="floatType"/>
+
+            <!-- increasing size effect -->
+            <objectAnimator
+                android:duration="200"
+                android:propertyName="scaleX"
+                android:valueTo="1"
+                android:valueType="floatType" />
+            <objectAnimator
+                android:duration="200"
+                android:propertyName="scaleY"
+                android:valueTo="1"
+                android:valueType="floatType" />
+        </set>
+    </item>
+
+</selector>
