@@ -7,6 +7,7 @@ import android.widget.ImageView
 
 /**
  * https://beta.shapeshifter.design/
+ * To save the animation: Export -> Animated Vector Drawable
  */
 
 class MainActivity : AppCompatActivity() {

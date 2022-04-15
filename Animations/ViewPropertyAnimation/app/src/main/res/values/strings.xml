@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">ViewPropertyAnimation</string>
+
+    <string name="btn_text">Disappear</string>
+</resources>
