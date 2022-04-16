@@ -34,6 +34,7 @@ class MainActivity : AppCompatActivity() {
             adapter.data.add(Product(adapter.data.size, R.drawable.ic_orange, "Orange", "Orange juice is widely used as a drink in restaurants and cafes."))
             adapter.notifyItemInserted(adapter.data.size - 1)
         }
+
         findViewById<Button>(R.id.remove).setOnClickListener {
             adapter.data.removeLast()
             adapter.notifyItemRemoved(adapter.data.size)
