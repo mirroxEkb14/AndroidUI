@@ -1,3 +1,27 @@
 <resources>
     <string name="app_name">RecyclerViewOverview</string>
+
+    <!--
+        use \ for incrementing the ' symbol
+    -->
+
+    <string name="half_life_desc">
+        Half-Life 2 is a 2004 first-person shooter game developed by Valve. It was published by Valve through its distribution service Steam; retail editions were published by Sierra. Like the original Half-Life (1998), Half-Life 2 combines shooting, puzzles, and storytelling, and adds features such as vehicles and physics-based gameplay. Players control Gordon Freeman as he joins a resistance movement to liberate the Earth from the control of an alien empire, the Combine.\nHalf-Life 2 was created using Valve\'s Source engine, which was developed at the same time. Development lasted five years and cost US$40 million.
+    </string>
+
+    <string name="portal2_desc">
+        is a 2011 puzzle-platform video game developed by Valve for Windows, Mac OS X, Linux, PlayStation 3, and Xbox 360. The digital PC version is distributed online by Valve\'s Steam service, while all retail editions were distributed by Electronic Arts. A port for the Nintendo Switch was included as part of Portal: Companion Collection.\nLike the original Portal (2007), players solve puzzles by placing portals and teleporting between them. Portal 2 adds features including tractor beams, lasers, light bridges, and paint-like gels that alter player movement or allow portals to be placed on any surface.
+    </string>
+
+    <string name="the_wither_desc">
+        is a role-playing video game for the PC, developed by CD Projekt RED and published by Atari. Based on The Witcher series of the same name by Polish author Andrzej Sapkowski, the game utilizes BioWare\'s proprietary Aurora Engine and was released in October 2007. An enhanced edition of the game, containing among other things the editor and two new adventures: The Price of Neutrality premium module and Side Effects premium module, was released in September 2008. In the first 10 months following its release, the game sold 800,000 copies worldwide. A console version using an entirely new engine and combat system, titled The Witcher: Rise of the White Wolf, was planned for release in Fall 2009, but development was suspended indefinitely on May 6, 2009.
+    </string>
+
+    <string name="stalker_shadow_of_chernobyl_desc">
+        is a survival-horror first person shooter video game by Ukrainian developer GSC Game World, and published by THQ. It is the first installment in the S.T.A.L.K.E.R. series. It features an alternate-reality theme, in which a second nuclear disaster occurs at the Chernobyl Nuclear Power Plant in 2006 and causes strange changes in the area around it. The game has a non-linear storyline and features gameplay elements such as trading and two-way communication with NPCs. The game also incorporates elements of role-playing games and business simulators.\nThe background and some terminology of the game ("The Zone", "Stalker") is borrowed from the popular science fiction novella Roadside Picnic by Arkady and Boris Strugatsky and the 1979 Andrei Tarkovsky film Stalker that was loosely based on it, as well as Stalker, the film\'s subsequent novelization, which later became the full version of Roadside Picnic.
+    </string>
+
+    <string name="metro_2033_desc">
+        is a Post-Apocalyptic Survival Horror and First Person Shooter video game based on the novel of the same name, Metro 2033, by Russian author Dmitry Glukhovsky. The Ukrainian developing company, 4A Games, and former publishers of the series THQ collaborated with Dmitry Glukhovsky to create a digital rendition of his novel for the Xbox 360 and PC platforms. Originally, the game was to be released with the subtitle: The Last Refuge, but this subtitle was later dropped. A sequel, Metro: Last Light, was released in 2013.\nMetro 2033 is a semi-linear shooter taking place in the Post-Apocalyptic Metro System of Moscow, 20 years after the devastating World War III.
+    </string>
 </resources>

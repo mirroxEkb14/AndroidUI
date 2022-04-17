@@ -1,6 +1,48 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+<!--
+    Describes an item in RecyclerView
+
+    For some display when coding for ImageView ->
+        tools:src="@tools:sample/avatars"
+    Same for TextView ->
+        android:text="@tools:sample/lorem/random"
+-->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginStart="8dp"
+    android:layout_marginTop="8dp">
+
+    <ImageView
+        android:id="@+id/item_img"
+        android:layout_width="100dp"
+        android:layout_height="150dp"
+        tools:src="@tools:sample/avatars"/>
+
+    <LinearLayout
+        android:id="@+id/item_text_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginStart="15dp">
+
+        <TextView
+            android:id="@+id/item_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="23sp"/>
+
+        <TextView
+            android:id="@+id/item_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="@tools:sample/lorem/random"/>
+
+    </LinearLayout>
+
+</LinearLayout>
