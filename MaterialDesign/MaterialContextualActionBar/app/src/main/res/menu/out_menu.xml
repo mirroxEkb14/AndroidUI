@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- The menu of the toolbar on the right (icons) -->
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/castle"
+        android:title="@string/castle_title"
+        android:icon="@drawable/ic_baseline_castle_24"/>
+    <item
+        android:id="@+id/agriculture"
+        android:title="@string/agriculture_title"
+        android:icon="@drawable/ic_baseline_agriculture_24"/>
+</menu>

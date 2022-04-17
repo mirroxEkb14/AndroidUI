@@ -10,14 +10,22 @@
         android:id="@+id/btn_disappear"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/btn_text"/>
+        android:text="DISAPPEAR"/>
+
+    <Button
+        android:id="@+id/btn_appear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_disappear"
+        android:text="APPEAR"/>
 
     <ImageView
-        android:id="@+id/img"
+        android:id="@+id/img_main"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/ic_launcher_foreground"
+        android:src="@drawable/ic_launcher_background"
+        android:layout_below="@+id/btn_appear"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="40dp"/>
+        android:layout_marginTop="10dp"/>
 
 </RelativeLayout>

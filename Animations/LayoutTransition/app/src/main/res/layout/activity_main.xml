@@ -7,7 +7,7 @@
     tools:context=".MainActivity">
 
     <LinearLayout
-        android:id="@+id/btn_holder"
+        android:id="@+id/btn_container1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
@@ -16,24 +16,106 @@
             android:id="@+id/btn_add"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Add"/>
+            android:text="ADD"/>
 
         <Button
             android:id="@+id/btn_remove"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Remove"/>
+            android:text="REMOVE"
+            android:layout_below="@+id/btn_add"/>
+
+    </LinearLayout>
+
+
+    <!-- android:animateLayoutChanges="true" -->
+    <LinearLayout
+        android:id="@+id/layout_btn_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/btn_container1"
+        android:layout_marginTop="10dp"
+        android:animateLayoutChanges="true">
+
+        <Button
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:text="BUTTON"/>
+
+        <Button
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:text="BUTTON"/>
+
+        <Button
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:text="BUTTON"/>
+
+        <Button
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:text="BUTTON"/>
 
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/btn_container"
-        android:layout_width="250dp"
-        android:layout_height="250dp"
+        android:id="@+id/btn_container2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:layout_below="@id/btn_holder"
+        android:layout_below="@id/btn_container1"
+        android:layout_marginTop="185dp">
+
+        <Button
+            android:id="@+id/btn_add2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ADD"
+            android:layout_below="@id/layout_btn_container"
+            android:layout_marginTop="20dp"/>
+
+        <Button
+            android:id="@+id/btn_remove2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="REMOVE"
+            android:layout_below="@+id/btn_add2"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_btn_container2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="40dp"
-        android:animateLayoutChanges="true"/>
+        android:layout_below="@id/btn_container2"
+        android:layout_marginTop="5dp"
+        android:animateLayoutChanges="true">
+
+        <Button
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:text="BUTTON"/>
+
+        <Button
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:text="BUTTON"/>
+
+        <Button
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:text="BUTTON"/>
+
+        <Button
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:text="BUTTON"/>
+
+    </LinearLayout>
 
 </RelativeLayout>

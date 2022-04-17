@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!--
+    - android:layout_gravity="center" ->
+    moves to the center of the screen (only in FrameLayout, LinearLayout)
+
+    - android:shadowColor="@color/black" ->
+    the color of the shadow
+
+    - android:shadowDx="5", android:shadowDy="5" ->
+    the directions of the shadow (Ox, Oy)
+
+    - android:shadowRadius="5" ->
+    the size of the shadow
+
+    - android:textColor="#50000000" ->
+    the color and transparency of the text
+
+    - android:alpha="0.5" ->
+    the transparency of the text (прозрачность)
+    -->
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_view"
+        android:layout_gravity="center"
+        android:textSize="30sp"
+        android:shadowColor="@color/black"
+        android:shadowDx="5"
+        android:shadowDy="5"
+        android:shadowRadius="5"
+        android:textColor="#50000000" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_view"
+        android:backgroundTint="@color/black"/>
+
+</FrameLayout>

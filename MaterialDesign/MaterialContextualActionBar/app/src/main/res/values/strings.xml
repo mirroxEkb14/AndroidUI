@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">MaterialContextualActionBar</string>
+    <string name="txt_greetings">Hello World!</string>
+    
+    <!-- out_menu.xml item titles -->
+    <string name="agriculture_title">Agriculture</string>
+    <string name="castle_title">Castle</string>
+</resources>

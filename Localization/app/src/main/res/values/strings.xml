@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Localization</string>
+    <string name="text_view">Это TextView с крутыми эффектами тени!</string>
+</resources>

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ButtonsDemo">
+
+    <TextView
+        android:id="@+id/main_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="The text to demonstrate"
+        android:textSize="30sp"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/btn_container"
+        android:layout_marginBottom="40dp"/>
+
+    <LinearLayout
+        android:id="@+id/btn_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_above="@+id/switch_to_animals_btn"
+        android:layout_marginBottom="200dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <Button
+                android:id="@+id/fade_in"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="Fade In"
+                android:textAllCaps="false"
+                android:layout_weight="1"/>
+
+            <Button
+                android:id="@+id/fade_out"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="Fade Out"
+                android:textAllCaps="false"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <Button
+                android:id="@+id/zoom_in"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="Zoom In"
+                android:textAllCaps="false"
+                android:layout_weight="1"/>
+
+            <Button
+                android:id="@+id/zoom_out"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="Zoom Out"
+                android:textAllCaps="false"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <Button
+                android:id="@+id/slide_down"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="Slide down"
+                android:textAllCaps="false"
+                android:layout_weight="1"/>
+
+            <Button
+                android:id="@+id/slide_up"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="Slide Up"
+                android:textAllCaps="false"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <Button
+                android:id="@+id/bounce"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="Bounce"
+                android:textAllCaps="false"
+                android:layout_weight="1"/>
+
+            <Button
+                android:id="@+id/rotate"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="Rotate"
+                android:textAllCaps="false"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/switch_to_animals_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SWITCH TO ANIMALS"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp" />
+
+</RelativeLayout>

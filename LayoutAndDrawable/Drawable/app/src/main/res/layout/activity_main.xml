@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!--
+    android:background="@drawable/rectangle" ->
+    set the necessary drawable file as a background
+    -->
+
+    <android.widget.Button
+        android:id="@+id/btn1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_text"
+        android:textColor="@color/black"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@null"
+        android:background="@drawable/rectangle" />
+
+    <!--
+    android:background="@drawable/selector_item" ->
+    set the necessary drawable file as a background
+    -->
+    <android.widget.Button
+        android:id="@+id/btn2"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:text="@string/btn_text"
+        android:textColor="@color/black"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/btn1"
+        android:background="@drawable/selector_item" />
+
+    <!--
+    android:background="?android:attr/selectableItemBackground"
+    android:background="?android:attr/selectableItemBackgroundBorderless"
+    -> ripple drawable (эффект пульсации)
+    -->
+    <android.widget.Button
+        android:id="@+id/btn3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_text"
+        android:textColor="@color/black"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/btn2"
+        android:background="?android:attr/selectableItemBackground" />
+
+    <android.widget.Button
+        android:id="@+id/btn4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_text"
+        android:textColor="@color/black"
+        android:layout_centerHorizontal="true"
+        android:background="?android:attr/selectableItemBackgroundBorderless"
+        android:layout_below="@id/btn3"/>
+
+    <android.widget.Button
+        android:id="@+id/btn_gradient1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BUTTON GRADIENT RECTANGLE 1"
+        android:background="@drawable/shape_rectangle_gradient1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/btn4"/>
+
+    <ImageView
+        android:id="@+id/img_circle"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/btn_gradient1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/shape_circle" />
+
+    <android.widget.Button
+        android:id="@+id/btn_gradient2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BUTTON GRADIENT RECTANGLE 2"
+        android:background="@drawable/shape_rectangle_gradient2"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/img_circle"/>
+
+    <android.widget.Button
+        android:id="@+id/btn_gradient3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="GLASS"
+        android:background="@drawable/shape_rectangle_gradient3"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/btn_gradient2"
+        android:layout_marginTop="20dp"/>
+
+    <android.widget.Button
+        android:id="@+id/btn_gradient4"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:text="GO!"
+        android:textColor="@color/white"
+        android:background="@drawable/shape_circle_btn"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/btn_gradient3"
+        android:layout_marginTop="15dp"/>
+
+    <android.widget.Button
+        android:id="@+id/btn_gradient5"
+        android:layout_width="200dp"
+        android:layout_height="48dp"
+        android:layout_below="@id/btn_gradient4"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:drawableRight="@drawable/ic_arrow_forward_ios"
+        android:drawablePadding="-35dp"
+        android:background="@drawable/shape_shadow_btn"
+        android:text="SHADOW BUTTON!"
+        android:textColor="@color/white" />
+
+</RelativeLayout>
