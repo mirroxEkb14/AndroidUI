@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+     app:layout_behavior="@string/bottom_sheet_behavior" ->
+     now the CoordinatorLayout will know how to show this layout
+
+     app:behavior_peekHeight="70dp" ->
+     насколько BottomSheet будет торчать в свёрнутом виде
+
+     Есть просто TextView с высотой, равной высоте «язычка». Можно
+     размещать туда что угодно, главное, чтобы эти высоты были равны друг другу
+     (учитываются внутренние/внешние отступы)
+
+     app:behavior_hideable="true" ->
+     позволяет свайпом вниз спрятать BottomSheet
+
+     app:behavior_skipCollapsed="true" ->
+     BottomSheet будет открыт всегда без возможности его свернуть
+-->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/bottom_sheet"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/darker_gray"
+    android:orientation="vertical"
+    app:behavior_hideable="true"
+    app:behavior_peekHeight="70dp"
+    app:layout_behavior="@string/bottom_sheet_behavior">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@color/orange"
+        android:gravity="center"
+        android:text="Up"
+        android:textColor="@android:color/white" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:gravity="center"
+        android:scaleType="centerCrop"
+        android:src="@drawable/hello_cat"
+        android:textColor="@android:color/white" />
+</LinearLayout>
