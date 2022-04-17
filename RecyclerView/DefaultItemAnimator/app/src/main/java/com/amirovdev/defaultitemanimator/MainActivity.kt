@@ -9,8 +9,8 @@ import com.amirovdev.defaultitemanimator.adapter.ProductAdapter
 import com.amirovdev.defaultitemanimator.animator.MyItemAnimator
 
 /**
- * This class can animate adding, removing and updating
- * the list elements
+ * This class can animate adding, removing
+ * and updating the list elements
  */
 
 class MainActivity : AppCompatActivity() {
@@ -18,6 +18,7 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
         val recyclerView = findViewById<RecyclerView>(R.id.recycler_view)
         val adapter = ProductAdapter(arrayListOf(
             Product(0, R.drawable.ic_apple, "Apple", "Juicy Apple fruit, which is eaten fresh, serves as a raw material in cooking and for making drinks."),
@@ -28,10 +29,15 @@ class MainActivity : AppCompatActivity() {
             Product(5, R.drawable.ic_orange, "Orange", "Orange juice is widely used as a drink in restaurants and cafes.")
         ))
         recyclerView.adapter = adapter
+
+        // pass the ItemAnimator to the RecyclerView
         recyclerView.itemAnimator = MyItemAnimator(applicationContext)
 
+        // when we click the 'ADD' button, the item(orange) will be added to the RecyclerView
         findViewById<Button>(R.id.add).setOnClickListener {
             adapter.data.add(Product(adapter.data.size, R.drawable.ic_orange, "Orange", "Orange juice is widely used as a drink in restaurants and cafes."))
+
+            // tell the Recycler view about updating the data
             adapter.notifyItemInserted(adapter.data.size - 1)
         }
 
