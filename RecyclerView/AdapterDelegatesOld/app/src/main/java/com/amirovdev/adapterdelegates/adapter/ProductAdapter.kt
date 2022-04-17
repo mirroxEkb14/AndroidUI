@@ -68,7 +68,7 @@ class ProductAdapter(var data: ArrayList<Item>) : RecyclerView.Adapter<RecyclerV
         val textDesc = itemView.findViewById<TextView>(R.id.text_desc)
     }
 
-    // ViewHodler for Ad
+    // ViewHolder for Ad
     class AdViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         val textTitle = itemView.findViewById<TextView>(R.id.title)
         val textContant = itemView.findViewById<TextView>(R.id.content)

@@ -3,7 +3,6 @@ package com.amirovdev.adapterdelegatesnew.adapter
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.amirovdev.adapterdelegatesnew.R
@@ -12,10 +11,6 @@ import com.amirovdev.adapterdelegatesnew.model.Item
 import com.hannesdorfmann.adapterdelegates4.AbsListItemAdapterDelegate
 
 class AdDelegateAdapter : AbsListItemAdapterDelegate<Ad, Item, AdDelegateAdapter.ViewHolder>() {
-    class ViewHolder(itemView: View): RecyclerView.ViewHolder(itemView) {
-        val textTitle = itemView.findViewById<TextView>(R.id.title)
-        val textContent = itemView.findViewById<TextView>(R.id.content)
-    }
 
     override fun isForViewType(item: Item, items: MutableList<Item>, position: Int): Boolean {
         return item is Ad
@@ -28,5 +23,10 @@ class AdDelegateAdapter : AbsListItemAdapterDelegate<Ad, Item, AdDelegateAdapter
     override fun onBindViewHolder(item: Ad, holder: ViewHolder, payloads: MutableList<Any>) {
         holder.textTitle.text = item.title
         holder.textContent.text = item.content
+    }
+
+    class ViewHolder(itemView: View): RecyclerView.ViewHolder(itemView) {
+        val textTitle = itemView.findViewById<TextView>(R.id.title)
+        val textContent = itemView.findViewById<TextView>(R.id.content)
     }
 }

@@ -17,11 +17,6 @@ import com.hannesdorfmann.adapterdelegates4.AbsListItemAdapterDelegate
 
 class ProductAdapterDelegate :
     AbsListItemAdapterDelegate<Product, Item, ProductAdapterDelegate.ViewHolder>() {
-    class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
-        val icon = itemView.findViewById<ImageView>(R.id.icon)
-        val textName = itemView.findViewById<TextView>(R.id.text_name)
-        val textDesc = itemView.findViewById<TextView>(R.id.text_desc)
-    }
 
     // returns if the item is that we need to process
     override fun isForViewType(item: Item, items: MutableList<Item>, position: Int): Boolean {
@@ -33,9 +28,17 @@ class ProductAdapterDelegate :
         return ViewHolder(LayoutInflater.from(parent.context).inflate(R.layout.item, parent, false))
     }
 
+    // binds the data from the list to the ViewHolder
     override fun onBindViewHolder(item: Product, holder: ViewHolder, payloads: MutableList<Any>) {
         holder.icon.setImageResource(item.idIcon)
         holder.textName.text = item.name
         holder.textDesc.text = item.desc
+    }
+
+    // finds all the fields of the View
+    class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
+        val icon = itemView.findViewById<ImageView>(R.id.icon)
+        val textName = itemView.findViewById<TextView>(R.id.text_name)
+        val textDesc = itemView.findViewById<TextView>(R.id.text_desc)
     }
 }

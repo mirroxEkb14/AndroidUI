@@ -8,7 +8,7 @@ import com.amirovdev.adapterdelegates.model.Ad
 import com.amirovdev.adapterdelegates.model.Product
 
 /**
- * When we add to RecyclerView new data type (RecyclerView contains different types of data)
+ * Adding the elements of different types in one RecyclerView (Product and Ad)
  *
  * That is an old and bad way! See delegates
  */
