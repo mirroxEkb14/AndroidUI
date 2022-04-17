@@ -1,4 +1,4 @@
-package com.amirovdev.diffutil
+package com.amirovdev.diffutil.adapter
 
 import android.view.LayoutInflater
 import android.view.View
@@ -6,6 +6,8 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import com.amirovdev.diffutil.model.Product
+import com.amirovdev.diffutil.R
 import java.util.ArrayList
 
 class ProductAdapter(var data: ArrayList<Product>) : RecyclerView.Adapter<ProductAdapter.ViewHolder>() {

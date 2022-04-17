@@ -6,6 +6,9 @@ import android.widget.Button
 import android.widget.EditText
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
+import com.amirovdev.diffutil.adapter.ProductAdapter
+import com.amirovdev.diffutil.adapter.ProductDiff
+import com.amirovdev.diffutil.model.Product
 
 /**
  * We make some changes to our RecyclerView dataset, we call the 'notifyDataSetChanged()' method
@@ -40,15 +43,17 @@ class MainActivity : AppCompatActivity() {
         recyclerView.adapter = adapter
 
         initViews()
+
+        // get the index that the user entered
         fun getIndex(): Int =
             itemIndex.text.toString().toInt()
 
         fun updateData(newList: ArrayList<Product>) {
-            val oldList = adapter.data
+            val oldList = adapter.data // get the old list
             val productDiff = ProductDiff(oldList, newList)
             val diffResult = DiffUtil.calculateDiff(productDiff)
-            adapter.data = newList
-            diffResult.dispatchUpdatesTo(adapter)
+            adapter.data = newList // set a new list
+            diffResult.dispatchUpdatesTo(adapter) // the data changed in Adapter
         }
 
         add.setOnClickListener {
