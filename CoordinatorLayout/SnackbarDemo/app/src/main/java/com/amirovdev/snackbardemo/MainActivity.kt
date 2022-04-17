@@ -8,6 +8,7 @@ import com.google.android.material.snackbar.Snackbar
 import kotlinx.android.synthetic.main.activity_main.*
 
 /**
+ * Layout-based behavior
  * When clicking on FAB a SnackBar pops up and moves the button
  */
 
