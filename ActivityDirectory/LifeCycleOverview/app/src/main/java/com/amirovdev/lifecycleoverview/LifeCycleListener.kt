@@ -7,6 +7,9 @@ import androidx.lifecycle.OnLifecycleEvent
 
 /**
  * To implement a review of the component lifecycle
+ *
+ * LifecycleObserver is an interface that does not contain
+ * any methods, all the logic is reached by annotations
  */
 
 class LifeCycleListener : LifecycleObserver {
