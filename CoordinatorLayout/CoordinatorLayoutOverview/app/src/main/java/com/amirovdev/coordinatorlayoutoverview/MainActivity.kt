@@ -19,6 +19,10 @@ import android.os.Bundle
  *
  * Connect the library ->
  * implementation 'androidx.coordinatorlayout:coordinatorlayout:1.2.0'
+ *
+ *
+ * to change the FAB btn icon color, use
+ * app:tint=""
  */
 
 class MainActivity : AppCompatActivity() {

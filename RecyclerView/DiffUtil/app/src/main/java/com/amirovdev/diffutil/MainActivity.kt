@@ -21,7 +21,7 @@ import com.amirovdev.diffutil.model.Product
  * is: realize DiffUtil.Callback, calculate Diff and tell it the adapter
  */
 
-class MainActivity : AppCompatActivity() {
+class   MainActivity : AppCompatActivity() {
 
     private lateinit var itemIndex: EditText
     private lateinit var add: Button
