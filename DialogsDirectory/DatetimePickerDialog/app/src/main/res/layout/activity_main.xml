@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/datetime_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select date or time"
+        android:textSize="20sp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"/>
+
+    <Button
+        android:id="@+id/btn_date_picker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date"
+        android:layout_below="@id/datetime_text"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="200dp"/>
+
+    <Button
+        android:id="@+id/btn_time_picker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Time"
+        android:layout_below="@id/btn_date_picker"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/btn_datetime_picker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date + Time"
+        android:layout_below="@id/btn_time_picker"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>
