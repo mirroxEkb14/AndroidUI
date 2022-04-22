@@ -21,7 +21,7 @@ class BlankFragment1 : Fragment() {
         btn_activity2_fragment1.setOnClickListener {
             activity?.supportFragmentManager
                 ?.beginTransaction()
-                ?.add(R.id.container_activity2, BlankFragment2())
+                ?.add(R.id.container_activity2, BlankFragment2(), "BlankFragment2")
                 ?.addToBackStack(null)
                 ?.commit()
         }
