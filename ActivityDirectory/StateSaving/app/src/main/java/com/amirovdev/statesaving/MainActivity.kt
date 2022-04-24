@@ -11,7 +11,7 @@ import android.widget.TextView
  * When we flip the device, the configuration is changed from 'portrait'
  * to 'landscape' and Activity is destroyed with all unsaved data.
  *
- * In this exmaple, after typing the text in EditText and clicking the Button,
+ * In this example, after typing the text in EditText and clicking the Button,
  * TextView has the text from EditText, then we flip the device and TextView
  * text becomes "Hello World!"(default value), because Activity is destroyed
  * after flipping the screen.
