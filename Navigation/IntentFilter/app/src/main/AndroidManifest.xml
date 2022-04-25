@@ -14,13 +14,26 @@
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.LAUNCHER"/>
+                <data android:mimeType="text/plain"/>
             </intent-filter>
-            <intent-filter>
-                <action android:name="android.intent.action.WEB_SEARCH"/>
-                <category android:name="android.intent.category.DEFAULT"/>
-            </intent-filter>
+
+<!--            <intent-filter>-->
+<!--                <action android:name="android.intent.action.WEB_SEARCH"/>-->
+<!--                <data android:scheme="http"/>-->
+<!--                <data android:scheme="https"/>-->
+<!--                <category android:name="android.intent.category.DEFAULT"/>-->
+<!--                <category android:name="android.intent.category.BROWSABLE"/>-->
+<!--            </intent-filter>-->
         </activity>
     </application>
+
+    <queries>
+        <intent>
+            <action android:name="android.intent.action.VIEW" />
+            <category android:name="android.intent.category.BROWSABLE" />
+            <data android:scheme="https" />
+        </intent>
+    </queries>
 
 </manifest>

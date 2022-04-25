@@ -1,5 +1,7 @@
 package com.amirovdev.intentfilter
 
+import android.app.SearchManager
+import android.content.ActivityNotFoundException
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -53,10 +55,18 @@ class MainActivity : AppCompatActivity() {
         mainBtn.setOnClickListener {
             val intent = Intent(Intent.ACTION_WEB_SEARCH)
 
-            // if we do not have this Intent in Manifest file, a Toast will be displayed
-            if (intent.resolveActivity(packageManager) != null) {
+            intent.putExtra(SearchManager.QUERY, "some query")
+
+//            // if we do not have this Intent in Manifest file, a Toast will be displayed
+//            if (intent.resolveActivity(packageManager) != null) {
+//                startActivity(intent)
+//            } else {
+//                Toast.makeText(this, "Sorry, no such app", Toast.LENGTH_SHORT).show()
+//            }
+
+            try {
                 startActivity(intent)
-            } else {
+            } catch (e: ActivityNotFoundException) {
                 Toast.makeText(this, "Sorry, no such app", Toast.LENGTH_SHORT).show()
             }
         }
