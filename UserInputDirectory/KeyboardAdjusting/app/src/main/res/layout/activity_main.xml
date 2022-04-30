@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/main_img"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/mystery_shack"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/main_tv"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/main_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Season 2 Episode 13"
+        app:layout_constraintTop_toBottomOf="@id/main_img"
+        app:layout_constraintBottom_toTopOf="@id/main_ed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <!--
+        There are buttons 'Input', 'Send' and 'Search' on the keyboard
+        which are changed with 'android:imeOptions' attribute. This
+        attribute to work 'android:inputType' attribute must be "text"
+        because "textMultiLine" is set by default
+
+        "text" ->
+        if we have several EditText, the button will redirect us to the
+        next one, if it is the last, then the keyboard disappears
+
+        "textMultiLine" ->
+        redirect us to the next line on the same EditText, can behave
+        same as "text" with a long-press
+
+        All the EditText have android:imeOptions="normal" by default
+        what means if it is not the last EditText, there will be an
+        arrow to the next EditText, if it is the last EditText on the
+        screen, there will be a tick, the input ends
+    -->
+
+    <EditText
+        android:id="@+id/main_ed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="I`m watching Gravity Falls now..."
+        android:layout_centerHorizontal="true"
+        android:inputType="text"
+        android:layout_below="@+id/main_img"
+        app:layout_constraintTop_toBottomOf="@id/main_tv"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
