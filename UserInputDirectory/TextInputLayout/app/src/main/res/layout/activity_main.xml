@@ -37,11 +37,11 @@
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/main_til2"
-        style="@style/Widget.MaterialComponents.TextInputEditText.OutlinedBox"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/main_til1"
-        android:layout_marginTop="20dp">
+        android:layout_marginTop="20dp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
@@ -57,10 +57,10 @@
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/main_til3"
         android:layout_width="match_parent"
-        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
         android:layout_height="wrap_content"
         android:layout_below="@+id/main_til2"
-        android:layout_marginTop="20dp">
+        android:layout_marginTop="20dp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox">
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
