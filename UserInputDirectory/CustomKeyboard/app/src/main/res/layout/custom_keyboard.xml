@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+    The main layout, all the keyboard is here
+
+    ' android:layout_alignParentBottom="true" '
+    -> aligns our keyboard to the bottom edge of the parent container
+
+    ' android:keyPreviewLayout="@layout/keyboard_preview" '
+    -> sets the preview markup of the button (when we do a long-press)
+-->
+
+<android.inputmethodservice.KeyboardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:id="@+id/custom_keyboard"
+    android:keyPreviewLayout="@layout/keyboard_preview"
+    android:background="@android:color/holo_orange_dark"
+    android:layout_alignParentBottom="true">
+
+</android.inputmethodservice.KeyboardView>
